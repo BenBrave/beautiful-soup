@@ -25,7 +25,9 @@ for score in scores: #turn vote from string to integer
 new_list =[]
 for i in range(0,len(score_int)): #combine vote link and title into one list
     new_list.append({"title": titles[i],"link": links[i], "score": score_int[i]})
-print(new_list)
+
+max_item = max(score_int)
+print(new_list[score_int.index(max_item)])
 
 
 
